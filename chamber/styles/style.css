@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fb;
+    color: #222222;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0077b6;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #90e0ef;
+    color: #222222;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.events, .weather, .business-directory {
+    padding: 20px;
+}
+
+.weather {
+    display: flex;
+    gap: 20px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.business-directory {
+    position: relative;
+    padding: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.business-card {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
+
+.business-card img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.grid-view .business-card {
+    width: 300px;
+}
+
+.list-view {
+    display: block;
+}
+
+.list-view .business-card {
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.list-view .business-card:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#toggleViewButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggleViewButton:hover {
+    background-color: #555;
+}
+
+.carousel-button {
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+.footer {
+    background: #0077b6;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
