@@ -18,6 +18,9 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/randomCards.js"  defer></script>
+        
 </head>
 <body>
     <header class="header">
@@ -38,7 +41,8 @@
 
     <section class="hero">
         <div class="hero-image">
-            <button class="hero-button">Keynote Tickets</button>
+            <img src="images/hero-image.jpg" alt="">
+            <a href="#"><button class="hero-button">Join</button></a>
         </div>
     </section>
 
@@ -49,32 +53,40 @@
         </section>
 
         <section class="weather">
-            <div class="current-weather">
+            <div class= "current-weather card">
                 <h3>Current Weather</h3>
-                <p>75°F</p>
-                <p>Partly Cloudy</p>
-                <p>High: 85°F</p>
-                <p>Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30am</p>
-                <p>Sunset: 9:59pm</p>
+                <img id="weather-icon" alt="Weather Icon">
+                <p id="temp"></p>
+                <p id="desc"></p>
+                <p id="high">High: 85°F</p>
+                <p id="low">Low: 52°F</p>
+                <p id="humidity">Humidity: 34%</p>
+                <p id="sunrise">Sunrise: 7:30am</p>
+                <p id="sunset">Sunset: 9:59pm</p>
             </div>
-            <div class="forecast">
+            <div class="forecast card">
                 <h3>Weather Forecast</h3>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
+                <p id="today">Today: 90°F</p>
+                <p id="wednesday">Wednesday: 89°F</p>
+                <p id="thursday">Thursday: 68°F</p>
             </div>
         </section>
-
-        <section class="business-directory">
+        
+        <!-- <section class="business-directory">
             <div class="view-toggle">
                 <button id="toggleViewButton">Toggle Grid/List View</button>
             </div>
             <button id="prevButton" class="carousel-button">⬅</button>
             <div id="businessCarousel" class="carousel-container"></div>
             <button id="nextButton" class="carousel-button">➡</button>
+        </section> -->
+        <section class="directory-section">
+            
+            <div id="businessCards" class="directory-card-container"></div>
         </section>
+        
+        
+        
     </main>
 
     <footer class="footer">

@@ -5,56 +5,56 @@
         "direccion": "Calle San Martín 123, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 555-9876",
         "sitio_web": "https://laparrillacalerense.com.ar",
-        "imagen": "la_parrilla_calerense.png",
-        "nivel_membresia": 3
+        "imagen": "parrilla-logo.png",
+        "membresia": 3
       },
       {
-        "nombre": "Restaurante El Rincón de la Sierra",
+        "nombre": "Restaurante Menu Casero ",
         "direccion": "Av. Belgrano 456, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 444-2345",
         "sitio_web": "https://rincondelasierra.com.ar",
-        "imagen": "el_rincon_sierra.jpg",
-        "nivel_membresia": 2
+        "imagen": "rest-logo.jpg",
+        "membresia": 2
       },
       {
         "nombre": "DevCraft Soluciones",
         "direccion": "Ruta E-55 Km 20, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 555-1234",
         "sitio_web": "https://devcraft.com.ar",
-        "imagen": "calerasoft.png",
-        "nivel_membresia": 3
+        "imagen": "dev-logo.jpg",
+        "membresia": 3
       },
       {
         "nombre": "Vuelo Libre Parapente",
         "direccion": "Calle Los Cóndores 789, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 333-7890",
         "sitio_web": "https://vuelolibreparapente.com.ar",
-        "imagen": "vuelo_libre.png",
-        "nivel_membresia": 2
+        "imagen": "parpente-logo.jpg",
+        "membresia": 2
       },
       {
-        "nombre": "Ferretería Los Amigos",
+        "nombre": "Ferretería Ferremar",
         "direccion": "Ruta E-55 Km 15, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 555-7890",
         "sitio_web": "https://ferreterialosamigos.com.ar",
-        "imagen": "ferreteria_amigos.ico",
-        "nivel_membresia": 1
+        "imagen": "ferre-logo.jpg",
+        "membresia": 1
       },
       {
-        "nombre": "Hotel Mirador",
+        "nombre": "Exo Mindset Software",
         "direccion": "Calle Mitre 789, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 333-4567",
-        "sitio_web": "https://hotelmirador.com.ar",
-        "imagen": "hotel_mirador.png",
-        "nivel_membresia": 3
+        "sitio_web": "https://exomindset.com.ar",
+        "imagen": "exo-logo.jpg",
+        "membresia": 3
       },
       {
-        "nombre": "Gimnasio Fuerza Total",
+        "nombre": "Gimnasio Sparta",
         "direccion": "Av. Belgrano 321, La Calera, Córdoba, Argentina",
         "telefono": "+54 351 123-7894",
-        "sitio_web": "https://fuerzatotalgym.com.ar",
-        "imagen": "fuerza_total.jpg",
-        "nivel_membresia": 2
+        "sitio_web": "https://spartagym.com.ar",
+        "imagen": "gym-logo.jpg",
+        "membresia": 2
       }
     ]
   }
