@@ -161,7 +161,64 @@ main {
 .buttons button:hover {
     background: #224466;
 }
+/* Estilos para el modal */
+/* .modal {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    position: relative;
+} */
 
+/* Fondo del modal */
+/* .modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+/* Contenido del modal */
+/* .modal-content {
+    text-align: left;
+    position: relative;
+} */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: none; /* Inicialmente oculto */
+    z-index: 1000; /* Asegúrate de que el modal esté sobre otros elementos */
+}
+
+dialog[open] {
+    display: block;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    z-index: 999; /* Asegúrate de que el fondo oscuro esté detrás del modal */
+}
+
+/* Botón para cerrar el modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
 .course-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -1,3 +1,5 @@
+import { showModal } from './ModalModul.mjs';
+
 const courses = [
     {
         subject: 'CSE',
@@ -95,7 +97,9 @@ function renderCourses(filter = 'all') {
                     // <p>${course.description}</p>
                     // <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
                 ;
-
+                courseDiv.addEventListener('click', () => {
+                    showModal(course); // Mostrar el modal con la información del curso
+                });
                 courseGrid.appendChild(courseDiv);
             });
 }
