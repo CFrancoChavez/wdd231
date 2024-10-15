@@ -123,3 +123,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Función para observar la visibilidad de los elementos
+function revealOnScroll() {
+    const images = document.querySelectorAll('.profile-pic, .location-pic');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    images.forEach(image => observer.observe(image));
+}
+
+// Ejecutar la función cuando el DOM esté cargado
+document.addEventListener('DOMContentLoaded', revealOnScroll);
