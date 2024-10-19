@@ -285,6 +285,8 @@ body {
 .social-media img {
     width: 30px;
     margin: 0 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
 }
 .form-container{
     margin: 0;
@@ -295,6 +297,16 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
    
+
+}
+.thankyou{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 
 }
 .formulario {
