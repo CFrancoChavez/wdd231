@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Calera Chamber of Commerce</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="La Calera Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.example.com/images/lacalera-chamber.jpg" />
+    <meta property="og:url" content="https://www.example.com/" />
+    <meta property="og:description" content="The La Calera Chamber of Commerce helps local businesses thrive through events, networking, and resources." />
+    <meta property="og:site_name" content="La Calera Chamber of Commerce" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <script src="scripts/weather.js" defer></script>
+    <script src="scripts/randomCards.js"  defer></script> -->
+        
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/favicon.ico" alt="La Calera Chamber of Commerce">
+            <h1>La Calera Chamber of Commerce</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><button id="darkModeToggle">🌑</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-container">
+        <div class="formulario">
+            <form id="membershipForm">
+                <h1>Apply for Membership</h1>
+    
+                <!-- Applicant First Name -->
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name" required
+                        autocomplete="given-name">
+                </label>
+    
+                <!-- Applicant Last Name -->
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" required
+                        autocomplete="family-name">
+                </label>
+    
+                <!-- Organizational Title -->
+                <label for="orgTitle">Organizational Title:
+                    <input type="text" id="orgTitle" name="orgTitle" title="Enter your title within the organization"
+                        autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
+                </label>
+    
+                <!-- Email Address -->
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" title="Enter your email address" required
+                        autocomplete="email" placeholder="example@domain.com">
+                </label>
+    
+                <!-- Mobile Phone Number -->
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" required
+                        autocomplete="tel">
+                </label>
+    
+                <!-- Business/Organization Name -->
+                <label for="orgName">Organization Name:
+                    <input type="text" id="orgName" name="orgName" title="Enter your organization's name" required
+                        autocomplete="organization">
+                </label>
+    
+                <!-- Membership Level Selection -->
+                <label for="membership">Select Membership Level:
+                    <select id="membership" name="membership" title="Choose a membership level">
+                        <option value="NP Membership">NP Membership (No fee)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+    
+                <!-- Organization Description -->
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description" title="Describe your organization"></textarea>
+                </label>
+    
+                <!-- Hidden Timestamp -->
+                <input type="hidden" name="timestamp" id="timestamp">
+    
+                <!-- Submit Button -->
+                <input type="submit" value="Apply">
+    
+            </form>
+        </div>
+    
+    
+    
+        <!-- Membership Cards -->
+        <div class="membership-cards">
+            <div class="card">
+                <h2>NP Membership</h2>
+                <a href="#" class="info-link" data-modal="modal1">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Bronze Membership</h2>
+                <a href="#" class="info-link" data-modal="modal2">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Silver Membership</h2>
+                <a href="#" class="info-link" data-modal="modal3">Learn More</a>
+            </div>
+            <div class="card">
+                <h2>Gold Membership</h2>
+                <a href="#" class="info-link" data-modal="modal4">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Modals for Membership Information -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal1">&times;</span>
+            <h3>NP Membership</h3>
+            <p>No fee. Access to basic events and discounts.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <h3>Bronze Membership</h3>
+            <p>Access to more events, early registration.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal3">&times;</span>
+            <h3>Silver Membership</h3>
+            <p>Event discounts, training opportunities.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal4">&times;</span>
+            <h3>Gold Membership</h3>
+            <p>All benefits, including premium advertising spots.</p>
+        </div>
+    </div>
+
+    
+    
+ 
+
+    <footer class="footer">
+        <p>La Calera Chamber of Commerce</p>
+        <p>65 Av. San Martín, La Calera, Córdoba 5151</p>
+        <p>Email: info@lacalera.org</p>
+        <p>Phone: (223) 555-2300</p>   
+        <div class="social-media">
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        <p>WDD231 Class Project - Franco Chávez</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/join.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
