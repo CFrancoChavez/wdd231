@@ -18,8 +18,8 @@
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/randomCards.js"  defer></script>
+    <!-- <script src="scripts/weather.js" defer></script>
+    <script src="scripts/randomCards.js"  defer></script> -->
         
 </head>
 <body>
@@ -38,56 +38,63 @@
             </ul>
         </nav>
     </header>
+    <!-- Main Content Layout -->
+    <main class="grid-container">
+        <!-- Sidebar with visitor information -->
+        <aside class="sidebar">
+            <section class="visitor-info">
+                <h2>Visitor Info</h2>
+                <p id="visitor-message"></p>
+            </section>
 
-    <section class="hero">
-        <div class="hero-image">
-            <img src="images/hero-image.jpg" alt="">
-            <a href="#"><button class="hero-button">Join</button></a>
-        </div>
-    </section>
+            <!-- Additional sidebar content: Events, Calendar, etc. -->
+            <section class="calendar">
+                <h2>Upcoming Events</h2>
+                <div class="calendar-widget">
+                    <p>October 29, 2024</p>
+                    <p>Event 1: Local Festival</p>
+                    <p>Event 2: Hackaton in Devcraft Offices</p>
+                </div>
+            </section>
+        </aside>
 
-    <main>
-        <section class="events">
-            <h2>Events</h2>
-            <div class="events-content"></div>
-        </section>
-
-        <section class="weather">
-            <div class= "current-weather card">
-                <h3>Current Weather</h3>
-                <img id="weather-icon" alt="Weather Icon">
-                <p id="temp"></p>
-                <p id="desc"></p>
-                <p id="high">High: 85°F</p>
-                <p id="low">Low: 52°F</p>
-                <p id="humidity">Humidity: 34%</p>
-                <p id="sunrise">Sunrise: 7:30am</p>
-                <p id="sunset">Sunset: 9:59pm</p>
+        <!-- Main gallery area with local images -->
+        <section class="gallery">
+            <h2>Local Photos of Interest</h2>
+            <div class="gallery-images">
+                <figure>
+                    <img data-src="images/exoevent.webp" alt="Caption 1" class="lazyload">
+                    <figcaption>Exo Mindset - Event</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/lagunaazul.webp" alt="Caption 2" class="lazyload">
+                    <figcaption>Blue Lagoon</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/grill.webp" alt="Caption 3" class="lazyload">
+                    <figcaption>Parrilla La Calerense</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/javacourse.webp" alt="Caption 4" class="lazyload">
+                    <figcaption>Java Course Promotion</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/spartagym.webp" alt="Caption 5" class="lazyload">
+                    <figcaption>Sparta Gym</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/parapente.webp" alt="Caption 6" class="lazyload">
+                    <figcaption>Vuelo Libre - Parapente</figcaption>
+                </figure>
+                
             </div>
-            <div class="forecast card">
-                <h3>Weather Forecast</h3>
-                <p id="today">Today: 90°F</p>
-                <p id="wednesday">Wednesday: 89°F</p>
-                <p id="thursday">Thursday: 68°F</p>
-            </div>
         </section>
-        
-        <!-- <section class="business-directory">
-            <div class="view-toggle">
-                <button id="toggleViewButton">Toggle Grid/List View</button>
-            </div>
-            <button id="prevButton" class="carousel-button">⬅</button>
-            <div id="businessCarousel" class="carousel-container"></div>
-            <button id="nextButton" class="carousel-button">➡</button>
-        </section> -->
-        <section class="directory-section">
-            
-            <div id="businessCards" class="directory-card-container"></div>
-        </section>
-        
-        
-        
     </main>
+
+   
+    
+    
+ 
 
     <footer class="footer">
         <p>La Calera Chamber of Commerce</p>
@@ -96,13 +103,13 @@
         <p>Phone: (223) 555-2300</p>   
         <div class="social-media">
             <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="images/face.png" alt="Twitter"></a>
+            <a href="#"><img src="images/face.png" alt="Facebook"></a>
             <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
         </div>
         <p>WDD231 Class Project - Franco Chávez</p>
         <p>Last modification: <span id="lastModified"></span></p>
     </footer>
-
+    <script src="scripts/discover.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
 </body>
