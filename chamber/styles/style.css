@@ -438,7 +438,7 @@ input[type="submit"]:hover {
 
 .gallery-images {
     display: flex; /* Usar flexbox para alinear las imágenes */
-    flex-wrap: wrap; /* Permitir que las imágenes se ajusten a varias filas */
+    flex-direction: column;
     justify-content: center; /* Centrar las imágenes horizontalmente */
 }
 /* .gallery img {
