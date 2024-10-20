@@ -563,9 +563,6 @@ img.lazyload {
 }
 
 /* Estilo para las imágenes cargadas */
-.fade-in {
-    opacity: 1; /* Aparecen gradualmente cuando se cargan */
-}
 
 /* Estilos para pantallas más grandes */
 @media (min-width: 768px) {
