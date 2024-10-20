@@ -563,30 +563,11 @@ img.lazyload {
 }
 
 /* Estilo para las imágenes cargadas */
-
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-    /* .form-container {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    } */
-
-    /* form {
-        width: 60%;
-    } */
-
-    /* .membership-cards {
-        width: 35%;
-        margin-left: 20px;
-    } */
-
-    /* .card {
-        flex: 1 1 calc(45% - 20px); 
-    } */
+.fade-in {
+    opacity: 1; /* Aparecen gradualmente cuando se cargan */
 }
+
+
 @media (max-width: 768px) {
     body {
         font-size: 14px;
