@@ -349,6 +349,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
 .membership-cards {
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +372,8 @@ input[type="submit"]:hover {
     margin: 10px;
     border-radius: 5px;
     text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: bounce 2s infinite;
+    /* transition: transform 0.3s ease, background-color 0.3s ease; */
 }
 
 .card h2 {
@@ -387,7 +389,14 @@ input[type="submit"]:hover {
     transform: scale(1.05);
     background-color: #e0e0e0;
 }
-
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 /* Modals */
 .modal {
     display: none;
