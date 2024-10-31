@@ -387,13 +387,13 @@ nav ul li a {
     height: 150%; /* Increase to create more depth */
     background-position: center;
     background-size: cover;
-    z-index: 1; /* Behind content */
+    z-index: -1; /* Behind content */
     animation: slideBackground 10s linear infinite alternate; 
 }
 
 .content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: #fff;
     display: flex;
     flex-direction: column;
