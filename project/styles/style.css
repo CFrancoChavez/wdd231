@@ -1,0 +1,649 @@
+:root {
+    --primary-color: #CEE5F2;
+    --secondary-color: #4A90E2;
+    --accent1-color: #2D4E74;
+    --accent2-color: #FFAA4C;
+    --text-main-color: #2C3E50;
+    --background-color: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-main-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+header img{
+    width: 150px;
+    border-radius: 50%;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: center;
+    flex-wrap: wrap; */
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* Estilos para el menú de hamburguesa en móviles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+.hero {
+    background-image: url('../images/screen-hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+.hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    color: white;
+    border-radius: 10px;
+}
+
+.hero-btn {
+    background-color: var(--accent2-color);
+    color: var(--text-main-color);
+    font-weight: 600;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.container-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em 0;
+    padding: 1em; /* Añadir un poco de padding a la sección */
+    background-color: #f8f9fa; /* Color de fondo suave para la sección */
+}
+
+.container {
+    border: 1px solid var(--secondary-color);
+    padding: 2em;
+    border-radius: 10px;
+    background-color: white;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición */
+}
+.container:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+.container h3 {
+    color: var(--text-main-color); /* Cambia a tu color primario */
+    margin-bottom: 0.5em; /* Espacio debajo del título */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+}
+.container p {
+    color: #555; /* Color de texto más suave para mejor legibilidad */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 20px;
+}
+/* About Section */
+.about {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin:1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    /* width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: left;
+    font-weight: 500; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 450px;
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: relative;
+}
+.sidebar:hover {
+    border-color: #00c3ff;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.8);
+}
+
+/* Responsive text */
+.sidebar p {
+    font-size: clamp(14px, 2vw, 18px);
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+    margin: 10px 0 0;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Card Grid */
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2em;
+    width: 100%; /* Ocupa el resto del espacio */
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-items: center;
+    padding: 20px;
+    /*flex-direction: column;
+    gap: 16px; 
+    width: 100%; */
+  }
+.card {
+    background-color:#f0f4f8;
+    border: 1px solid var(--secondary-color);
+   
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--accent1-color);
+    margin-bottom: 0.5em;
+}
+.weather-app, .name-search {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#f5f5f5;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    height: auto;
+   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.weather-app{
+    margin-top: -20px;
+}
+.weather-app h2, .name-search h2 {
+    margin-bottom: 1em;
+}
+#cityInput, #currentWeatherBtn, #forecastBtn {
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto; /* Center-align with some margin */
+    padding: 12px;
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+    background-color: #e0e7ef; /* Subtle background color for contrast */
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  button:focus, #cityInput:focus, .name-search input:focus {
+    outline: 3px solid #80bdff;
+    outline-offset: 2px;
+}
+  #currentWeatherBtn, #forecastBtn {
+    background-color: #133149; /* Button background for contrast */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #currentWeatherBtn:hover, #forecastBtn:hover, .name-search button:hover  {
+    background-color: #315f78; /* Darken button on hover for accessibility */
+  }
+.name-search input {
+    padding: 0.5em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin-bottom: 1em;
+}
+
+.name-search button {
+    padding: 0.5em; 
+    background-color: #133149;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#learn-more-button button{
+    margin-left:20px;
+    padding: 0.5em;
+}
+.name-search ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.name-search li {
+    padding: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+   
+}
+#contactus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    margin: 2em 0;
+    max-width: 600px;
+  
+    padding: 2em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 1em;
+    background-color: var(--accent2-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.thank-you {
+    text-align: center;
+    margin: 2em 0;
+    
+}
+#formDataList {
+    list-style: none; /* Oculta las viñetas */
+    padding: 1rem;  
+         /* Opcional: elimina el padding que podría tener */
+}
+#formDataList li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.parallax-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    
+}
+#parallax-container{
+    background-color: #133149;
+}
+.parallax-background {
+    background-image: url('../images/screen-hero.png');
+    position: absolute;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 150%; /* Increase to create more depth */
+    background-position: center;
+    background-size: cover;
+    z-index: 1; /* Behind content */
+    animation: slideBackground 10s linear infinite alternate; 
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 10 px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.content p {
+    z-index: 2;
+}
+.title h2{
+    color: #fff; /* Light color by default */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.animated-text {
+    font-size: 2.5em;
+    color: transparent; /* Start with transparent color */
+    background-image: linear-gradient(45deg, #ff0080, #00bfff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: opacity 0.5s ease;
+    opacity: 0; /* Hidden initially */
+}
+.content:hover .animated-text {
+    opacity: 1; /* Show on hover */
+    animation: shine 0.5s ease forwards; /* Animation for shining effect */
+}
+@keyframes slideBackground {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Mover al 50% del ancho para desplazarse a la izquierda */
+    }
+}
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 10px;
+}
+.social-media img {
+    width: 30px;
+    
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    header nav ul {
+        /* flex-direction: column; */
+        display: none;
+        flex-direction: column;
+        /* position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--accent1-color);
+        width: 100%;
+        text-align: center; */
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 50px;
+        font-size: 24px;
+    }
+   .nav-open nav ul {
+        display: block;
+    }
+    .container-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 70%;
+        max-width: 100%;
+    
+    }
+
+    .card-grid {
+        width: 90%;
+        max-width: 100%;
+    }
+    .cards-container{
+        flex-direction: column;
+    }
+    
+    .weather-app, .name-search {
+        width: 100%;
+    }
+    .parallax-container {
+        position: relative;
+        width: 70%;
+        height: 60vh;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+    .parallax-background {
+        width: 200%;
+         /* Escala con el contenedor */
+    }
+
+    .title h2 {
+        font-size: 1.5em; /* Tamaño de fuente reducido para mobile */
+        margin-bottom: 10px;
+    }
+
+    .animated-text {
+        font-size: 2em; /* Tamaño de fuente reducido en mobile */
+        line-height: 1.2; /* Espaciado de línea para evitar recortes */
+    }
+    
+    /* Reduce padding para aprovechar espacio en móviles */
+    .content {
+        padding: 5px;
+    }
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content {
+        padding: 1em;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .contact-form form {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 250px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-btn {
+        padding: 0.75em 1.5em;
+        font-size: 0.9em;
+    }
+
+    .container-section {
+        flex-direction: column;
+    }
+    .cards-container{
+        flex-direction: column;
+        
+    }
+    .project {
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .card-grid {
+        width: 100%;
+    }
+
+    .card {
+        padding: 1em;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}

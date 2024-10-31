@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software Development Portfolio">
+  <title>DevCraft Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+   <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.ico"> 
+
+   <!-- Facebook Meta Tags -->
+   <meta property="og:title" content="DevCraft Portfolio">
+   <meta property="og:description" content="Showcasing my work in software development.">
+   <meta property="og:image" content="images/devcraft-logo.png"> <!-- Cambia la ruta según la ubicación de tu imagen -->
+   <meta property="og:url" content="http://www.tusitio.com"> <!-- Cambia esta URL a la de tu portafolio -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="DevCraft">
+</head>
+<body>
+
+  <header>
+    <img src="images/devcraft-logo.png" alt="logo">
+    <h1>DevCraft Portfolio</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">☰
+     
+    </div>
+  </header>
+  <main>
+    <!-- About Page -->
+    <section class="about">
+        <div class="sidebar">
+            <img src="images/profile.webp" alt="Profile Picture" loading="lazy">
+            <p>Hi! I'm Franco Chavez, a web developer from Cordoba, Argentina, and I currently reside in La Calera.
+              I invite you to explore my projects, especially the weather application and the name search application. I'm sure you'll enjoy the experience and find these tools useful - don't hesitate to try them out!
+              
+              
+            </p>
+        </div>
+        <div class="cards-container">
+          
+          <section class="weather-app">
+            <h2>Weather App</h2>
+        
+            <!-- City Input Field -->
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+        
+            <!-- Weather Buttons -->
+            <button id="currentWeatherBtn">Get Current Weather</button>
+            <button id="forecastBtn">Get Weather Forecast</button>
+        
+            <!-- Weather Information Display Container -->
+            <div id="weatherContainer">
+                <!-- Current Weather Info -->
+                <div class="weather-content">
+                    <p><strong>Ciudad:</strong> <span id="city-name">Córdoba</span></p>
+                    <p><strong>Temperatura:</strong> <span id="temperature">25°C</span></p>
+                    <p><strong>Estado:</strong> <span id="weather-condition">Soleado</span></p>
+                </div>
+            </div>
+        </section>
+          
+        <section class="name-search">
+          <h2>Name Finder</h2>
+          <input type="text" id="name-input" placeholder="Search name..">
+          <button id="search-button">Search</button>
+          <button id="learn-more-button" style="display: none;">Learn More</button> 
+          <ul id="name-results"></ul>
+        </section>
+        
+          <div id="infoModal" class="modal">
+            <div id="modalContent" class="modal-content">
+                <span class="close" data-modal="info-modal">&times;</span>
+                <h3>Información del Nombre</h3>
+                <div id="modal-info">
+                    <!-- Name information will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="parallax-container">
+          <div class="parallax-background"></div>
+          <div class="content">
+            <h2 class="title">Our projects are built with the following technologies:</h2>
+            <p>Hover Here<p>
+              <h2  class="animated-text">Javascript</h2>
+              <h2  class="animated-text">HTML</h2>
+              <h2  class="animated-text">CSS</h2>
+          </div>
+      </div>
+      
+    </section>
+  </main>
+
+
+
+  <footer>
+    <p>© 2024 DevCraft. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/face.png" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+    </div>
+  
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+  <script type="module" src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/weather.js" defer></script>
+  <script src="scripts/hamburguer.js" defer></script>
+  <script src="scripts/GetDate.js" defer></script>
+</body>
+</html>
